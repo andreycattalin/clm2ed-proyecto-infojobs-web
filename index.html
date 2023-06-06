@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="bg-gradient-to-r from-blue-500 to-blue-600">
+
+    <!-- Menu dinamico -->
+    <div id="menu"></div>
+
+    <div class="mx-auto w-4/6 p-4">
+        <h1 class="text-xl text-white">Ofertas de empleo</h1>
+
+        <input oninput="searchByCity()" class="w-full rounded border-none mt-4" type="text" name="search" id="search" placeholder="Buscar por ciudad">
+
+        <div id="ofertas" class="">
+            <!-- aqui van las ofertas -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

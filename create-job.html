@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="">
+
+    <!-- Menu dinamico -->
+    <div id="menu">
+
+    </div>
+
+    <div class="mx-auto w-4/6 p-4 grid grid-row gap-4">
+        <h1 class="text-4xl font-bold">Publicar oferta de empleo</h1>
+
+        <input id="title" class="rounded border-slate-400 shadow-sm" type="text" placeholder="Titulo de la oferta">
+        <input id="desc" class="rounded border-slate-400 shadow-sm" type="text" placeholder="Descripción de la oferta">
+        <input id="city" class="rounded border-slate-400 shadow-sm" type="text" placeholder="Ciudad de la oferta">
+        <input id="salary" class="rounded border-slate-400 shadow-sm" type="number" placeholder="Salario">
+        <select id="location" class="rounded border-slate-400 shadow-sm" name="select">
+            <option value="remote">Remoto</option>
+            <option value="face2face" selected>Presencial</option>
+            <option value="hybrid">Híbrido</option>
+        </select>
+
+        <button onclick="publicarOferta()" class="w-full bg-indigo-500 text-white rounded p-4 hover:bg-indigo-700 transition-all">Publicar</button>
+
+    </div>
+
+    <script src="create-job.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

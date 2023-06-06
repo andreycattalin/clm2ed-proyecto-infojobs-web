@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body>
+
+    <!-- Menu dinamico -->
+    <div id="menu">
+
+    </div>
+
+    <div class="p-10">
+        <h1 id="bienvenido"></h1>
+
+        <p class="mt-10 font-medium">Mis ofertas publicadas</p>
+
+        <div id="ofertas">
+
+        </div>
+
+        <p class="mt-10 font-medium">Mis ofertas Aplicadas</p>
+
+        <div id="ofertas-aplicadas">
+
+        </div>
+
+        <button onclick="logOut()" class="p-4 bg-red-100 text-red-500 mt-10">Cerrar sesión</button>
+
+        <a class="ml-6 p-4 bg-indigo-500 text-white" href="/create-job.html">Publicar oferta</a>
+    </div>
+    <script src="profile.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
